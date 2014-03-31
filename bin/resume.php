@@ -124,6 +124,8 @@ if ($config->pdf) {
     // Unlink the temporary file
     unlink($pdf_source);
     echo "Wrote pdf to $pdf_output\n";
+    exit();
+    echo "Should have exited the system...\n";
 }
 
 /* End of file resume.php */
